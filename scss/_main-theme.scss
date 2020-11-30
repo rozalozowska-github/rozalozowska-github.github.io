@@ -1,0 +1,47 @@
+body {
+	background: $white;	
+	font-family: 'Ubuntu', sans-serif !important;
+	font-weight: 400;
+}
+
+.text-nearly-white {
+	color: theme-color("text-nearly-white") !important;
+}
+.text-light-blue {
+	color: theme-color("text-light-blue") !important;
+}
+.text-blue {
+	color: theme-color("text-blue") !important;
+}
+.border-white {
+	border-color: theme-color("border-white") !important;
+}
+.border-light-blue {
+	border-color: theme-color("border-light-blue") !important;
+}
+.border-blue {
+	border-color: theme-color("border-blue") !important;
+}
+.navbar-blue {
+	color: theme-color("text-white") !important;
+	background-color: theme-color("background-blue") !important;
+}
+.navbar-middle-blue {
+	color: theme-color("text-white") !important;
+	background-color: theme-color("background-middle-blue") !important;
+}
+.navbar-middle-blue .active, .navbar-middle-blue .show{
+  	color: theme-color("text-white") !important;
+  	background-color: theme-color("background-dark-blue") !important;	
+}
+.navbar-dark-blue {	
+  	color: theme-color("text-white") !important;
+  	background-color: theme-color("background-dark-blue") !important;
+}
+.footer-dark-blue {
+  	color: theme-color("text-white") !important;
+  	background-color: theme-color("background-dark-blue") !important;
+}
+.navbar-brand {
+	color: theme-color("text-white") !important;
+}

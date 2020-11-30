@@ -1,0 +1,37 @@
+@media (max-width: 991px) {
+	.container {
+		margin: 0;
+    	min-width: 100%;
+	}    
+	.research {
+		&__container {
+	    	margin-bottom: 56px;
+		}
+		&__header {
+			&__details {
+				margin-left: 0;
+			}
+		}
+		&__content {
+			&__title, &__value {
+				font-size: 16px;
+				line-height: 18px;
+			}
+			&__title {
+				padding-left: 25px;
+			}
+			&__value {
+				padding-left: 25px;
+			}    	
+		}
+	}
+	.footer {
+		&__contact__box {
+			text-align: center;
+			margin-top: 40px;
+		}
+		&__logo__box {
+			text-align: center;
+		}
+	}
+}

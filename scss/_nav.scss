@@ -1,0 +1,178 @@
+.navbar {
+	padding: 0;
+	position: relative;
+	.navbar {		
+		&__row {
+			min-width: 100%;
+		}
+	}
+	&__brand {
+	    height: 86px;
+	    line-height: 86px;
+    	margin-bottom: 1.0125rem;
+    	margin-left: 1rem;
+	    padding-top: 0.4125rem;
+		img {
+    		height: 80px;
+    		width: 260px;
+		}
+	}
+	&__flex-column {
+		flex-direction: column;
+		padding-left: 14px;
+		padding-right: 0;
+		position: relative;
+		Z-index: 1;
+	}
+	&__content {
+		clear: both;
+		position: relative;
+	}
+	&__about {	
+		border-bottom-left-radius: 23px;
+		position: relative;
+		Z-index: 3;
+	}
+	&__studies__list {
+		border-top-right-radius: 23px;
+		position: relative;
+		Z-index: 2;
+	}
+	&__my-profile {
+		position: relative;
+		Z-index: 1;
+	}
+}
+.navbar__effect {
+	display: block;
+	height: 100%;
+	position: absolute;
+	top:0; right: 0;
+	width: 50%;
+
+}
+.navbar__about {
+	.navbar-collapse {
+		margin-left: 5px;
+	}
+	.nav-item {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.nav-item.dropdown {		
+	    margin-left: -4px;
+	    margin-right: -6px;
+	    min-width: 106px;
+	    padding-left: 12px;
+	}
+	.nav-link {
+	    font-size: 1rem;
+	    /* height: 50px; */
+	    letter-spacing: -0.09rem;
+	    word-spacing: 0.1rem;
+	    line-height: 67px;
+	    padding-top: 0;
+	    text-transform: uppercase;
+	    white-space: nowrap;
+	    padding-bottom: 0;
+	}
+	.dropdown-toggle::after {
+		display: none;
+	}
+	.dropdown__menu {
+    	border-radius: 0;
+    	border-top-style: solid;
+    	border-bottom-width: 0;
+    	border-left-width: 0;
+    	border-right-width: 0;
+    	border-top-width: 4px;
+		margin-top: -2px;
+		padding: 0;
+		min-width: 100%;
+		Z-index: 3;
+		.dropdown-item {
+		    border-bottom-style: solid;
+		    border-bottom-width: 4px;
+		    font-size: 16px;
+		    letter-spacing: -1px;
+		    line-height: 48px;
+		    padding: 0;
+		    word-spacing: 1px;
+		    text-align: center;
+			&:last-child {
+				border-bottom-width: 0 !important;
+			}
+		}
+	}
+}
+.navbar__studies__list {
+	margin-right: 34px !important;
+	padding-left: 10px;
+	.nav-link {
+		line-height: 103px;
+		margin-right: 25px;
+		&__icon {
+			font-size: 28px;
+			margin-right: 15px;
+			&--lower {
+				margin-bottom: -7px;
+			}
+			&--little-lower {
+				margin-bottom: -2px;
+			}
+		}
+		&__text {
+			white-space: nowrap;
+		}
+	}
+}
+.navbar__my-profile {	
+	margin-left: -5px;
+	padding: 25px 30px 0 0;
+	&__header {
+		font-size: 14px;
+    	font-weight: 700;
+    	line-height: 18px;
+	}
+	&__box {/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#002d70+0,16569e+100 */
+background: rgb(0,45,112); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(0,45,112,1) 0%, rgba(22,86,158,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,45,112,1) 0%,rgba(22,86,158,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,45,112,1) 0%,rgba(22,86,158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002d70', endColorstr='#16569e',GradientType=1 ); /* IE6-9 */
+		border-style: solid;
+		border-width: 1px;
+		border-right-width: 0;
+		padding: 18px 0;
+	}
+	&__photo {
+		background: url(../img/cv-photo.png);
+  		background-position: 50% 50%;
+  		background-size: cover;
+		border-radius: 50%;
+  		display: inline-block;
+  		height: 65px;
+    	margin-left: 46px;
+    	margin-top: 2px;
+    	padding-left: 0px;
+  		position: relative;
+  		width: 65px;  
+	}
+	&__info {
+    	float: right;
+    	position: relative;
+    	padding-left: 12px;
+	}
+	&__name {
+	    font-size: 14px;
+	    font-weight: 700;
+	    line-height: 16px;
+	    margin-bottom: 2px;
+	    margin-top: 8px;
+	}
+	&__address {
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 16px;
+	}
+}

@@ -1,0 +1,105 @@
+
+.blur {
+	-webkit-filter: blur(1px)  brightness(100%);
+    -moz-filter: blur(1px)  brightness(100%);
+    -o-filter: blur(1px)  brightness(100%);
+    -ms-filter: blur(1px)  brightness(100%);
+    filter: blur(1px)  brightness(100%);
+    background-color: rgba(255, 255, 255,1);
+}
+.header {
+	-webkit-filter: blur(0)  brightness(100%);
+    -moz-filter: blur(0)  brightness(100%);
+    -o-filter: blur(0)  brightness(100%);
+    -ms-filter: blur(0)  brightness(100%);
+    filter: blur(0)  brightness(100%);
+    background-color: rgba(255, 255, 255,1);
+
+}
+.research {
+	&__container {
+    	margin-bottom: 116px;
+	}
+	&__header {
+		border-bottom-style: solid;
+		border-bottom-width: 2px;
+		font-size: 2.5rem;			
+		letter-spacing: -2px;
+		margin-bottom: 25px;
+		margin-left: 0.5rem;
+		padding-bottom: 14px;
+		&__bold {			
+		    font-weight: 700;
+		    letter-spacing: -3px;
+		    word-spacing: 3px;
+		}
+		&__details {
+		    font-size: 1.6rem;
+		    margin-left: 10px;
+		    letter-spacing: -0.5px;
+		}
+		&--more {			
+		    font-size: 1.5rem;
+		    font-weight: 700;
+		    letter-spacing: 0.5px;
+		    margin-bottom: 18px;
+		    margin-top: 44px !important;
+		}
+	}
+	&__content {
+		padding-top: 4px;
+		&__title, &__value {
+			font-size: 16px;
+			line-height: 18px;
+		}
+		&__title {
+			padding-left: 25px;
+		}
+		&__value {
+			padding-left: 30px;
+		}    	
+	}
+	&__content--more {	
+		padding-top: 2px;	
+		.research__content__title, .research__content__value {
+			font-size: 16px;
+			line-height: 23px;
+		}
+		.research__content__value {
+			padding-left: 25px !important;
+		}  
+	}
+}
+.footer {
+    min-height: 270px;
+	padding-top: 25px !important;
+	&__contact {		
+		cursor: pointer;
+	    letter-spacing: -1px;
+	    padding-left: 9px;
+	    &__box {	
+    		margin-top: 20px;  
+	    }
+	}
+	&__logo {
+		&__box {
+			text-align: right;
+		}
+	}
+}
+.contact {    
+	border-style: solid;
+    border-width: 4px;
+    display: none;
+    min-height: 500px;
+    min-width: 1004px;
+    position: fixed;
+    top: 28%;
+    /* bottom: 0; */
+    left: 24%;
+    /* right: 0; */
+    z-index: 2000;
+	&__close {				
+		cursor: pointer;
+	}
+}
