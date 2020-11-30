@@ -34,4 +34,16 @@
 			text-align: center;
 		}
 	}
+	.contact {  
+		min-width: 90%;
+		top: 10%;
+		left: 0;
+		&__container {
+			/*max-width: 90%;*/
+		}		
+		#mapid { 
+			margin-top: 20px;
+		}
+	} 
+
 }

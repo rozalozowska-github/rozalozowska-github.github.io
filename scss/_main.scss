@@ -93,13 +93,64 @@
     display: none;
     min-height: 500px;
     min-width: 1004px;
+    padding: 40px;
     position: fixed;
-    top: 28%;
+    top: 14%;
     /* bottom: 0; */
     left: 24%;
     /* right: 0; */
     z-index: 2000;
+    &__header {
+		border-bottom-style: solid;
+    	border-bottom-width: 4px;
+    	margin-bottom: 20px;
+    }
 	&__close {				
 		cursor: pointer;
+		position: absolute;
+    	top: -28px;
+    	left: -26px;
+    	height: 24px;
+		width: 24px;
+		svg {
+			font-size: 24px;
+		}
+	}
+	&__address {
+		&__header {
+		}
+		&__text {
+			display: inline-block;
+			width: 100%;
+		}
+		&__link {			
+			.border-white {
+				border-bottom-style: solid;
+				border-bottom-width: 1px;
+				text-decoration: none !important;
+			}
+			&:link,
+			&:visited {
+				color: #FFFFFF !important;
+			}
+			&:focus,
+			&:hover {
+    			color: #dc3545!important;
+			}
+
+		}
+		&__text--bold {
+			font-weight: 700;
+			padding: 10px 0;
+		}
+		&__text--info {
+			border-top-style: solid;
+			border-top-width: 1px;
+			padding: 15px 0 5px 0;
+		}
+	}
+	#mapid { 
+		height: 100%; 
+		min-height: 150px;
 	}
 }

@@ -10,36 +10,12 @@ closeBtn.onclick = function() {
   contactBox.style.display = "none";
   	console.log(contactBox);
 }
-//// Listen to all clicks on the document
-//document.addEventListener('click', function (event) {
-//	var clickedElem = event.target;
-//	// Check if the event.target matches some selector, and do things...
-//}, false);
-// When the user clicks anywhere outside of the modal, close it
-//window.addEventListener("click", function() {
-//  	console.log(event.target);
-//	if (event.target == blurred) {
-//		console.log(event.target);
-//		contactBox.style.display = "none";
-//	}
-//})
-
 
 window.onclick = function(event) {
-	console.log(contactBox);
   if (event.target == contactBox) {
-  	console.log(contactBox);
     contactBox.style.display = "none";
   }
 }
-
-
-
-function closeContact() {
-  document.getElementById("contact").style.display = "none";
-  document.getElementById("blurred").classList.remove("blur");
-}
-
 
 function openNav() {
   document.getElementById("mySidenav").style.left = "0";
@@ -53,3 +29,5 @@ function closeNav() {
   document.getElementById("mySidenav").classList.remove("open");
   document.getElementById("blurred").classList.remove("blur");
 }
+
+var mymap = L.map('mapid').setView([54.3716782, 18.614139], 17);

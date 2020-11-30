@@ -8,7 +8,14 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Hello, world!</title> 
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+	   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+	   crossorigin=""/>
+	   <!-- Make sure you put this AFTER Leaflet's CSS -->
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+	   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+	   crossorigin=""></script>
+	<title>Zadanie próbne - Róża Łozowska</title> 
 </head>
 <body class="d-flex flex-column h-100 mobile" cz-shortcut-listen="true">
 	<div class="navbar-collapse offcanvas-collapse navbar--sidenav sidenav navbar-middle-blue d-lg-none" id="mySidenav">
@@ -197,14 +204,69 @@
 </footer>
 </div>
 <div class="contact navbar-middle-blue border-blue" id="contactBox">
-	<div class="container-xl">
+	<div class="contact__container container-xl">
 		<div class="row">
-			<div class="col-lg-6">
-				<p>kontakt</p>
-				<span class="contact__close" id="closeBtn">x</span>
+			<div class="col-12 col-md-6">
+				<h2 class="contact__header border-light-blue">Dane kontaktowe</h2>
+				<span class="contact__close" id="closeBtn">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-x-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+						<path fill-rule="evenodd" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+					</svg>
+				</span>
+				<h5 class="contact__address__header">Adres</h5>
+				<address class="contact__address">
+					<p>
+						<span class="contact__address__text">Politechnika Gdańska</span>
+						<span class="contact__address__text">ul. Gabriela Narutowicza 11/12</span>
+						<span class="contact__address__text">80-233 Gdańsk</span>
+						<span class="contact__address__text">Polska</span>
+						<span class="contact__address__text contact__address__text--bold">
+							NIP: 5840203593, REGON: 000001620
+						</span>	
+						<span class="contact__address__text contact__address__text--info border-light-blue">
+							Informacja o numerach telefonów w Politechnice Gdańskiej
+						</span>			
+						<span class="contact__address__text">
+							tel.: <a href="tel:+48583471100" class="contact__address__link text-white">+48 58 347 11 00 </a>
+						</span>
+					</p>
+				</address>
+					<span class="contact__address__text">
+						<a href="https://moja.pg.edu.pl/app/addressBook/" class="contact__address__link text-white border-white">
+							Informacja o pracownikach (wyszukiwarka pracowników)
+						</a>
+					</span>
+					<span class="contact__address__text contact__address__text--bold">						
+							Informacja o rekrutacji						
+					</span>
+					<span class="contact__address__text">pon.–pt. 7.30–15.30</span>
+					<span class="contact__address__text">
+						tel.: <a href="tel:+48583486700" class="contact__address__link text-white">+48 58 348 67 00</a>
+					</span>
+					<span class="contact__address__text">
+						<a href="https://pg.edu.pl/rekrutacja" class="contact__address__link text-white border-white">https://pg.edu.pl/rekrutacja</a>
+					</span>
+					<span class="contact__address__text">
+						<a href="mailto:rekrutacja@pg.edu.pl" class="contact__address__link text-white border-white">rekrutacja@pg.edu.pl</a>
+					</span>
+					<h6 class="contact__address__text contact__address__text--bold">Kontakt dla mediów</h6>					
+					<span class="contact__address__text">
+						tel.: <a href="tel:+48583472999" class="contact__address__link text-white">+48 58 347 29 99</a>
+					</span>
+					<span class="contact__address__text">
+						<a href="mailto:biuro.prasowe@pg.edu.pl" class="contact__address__link text-white border-white">biuro.prasowe@pg.edu.pl</a>
+					</span>
+					<h6 class="contact__address__text contact__address__text--bold">Webmaster</h6>					
+					<span class="contact__address__text">
+						tel.: <a href="tel:+48583486337" class="contact__address__link text-white">+48 58 348 63 37</a>
+					</span>
+					<span class="contact__address__text">
+						<a href="mailto:webmaster@pg.edu.pl" class="contact__address__link text-white border-white">webmaster@pg.edu.pl</a>
+					</span>
 			</div>
-			<div class="col-lg-6">
-				<p>kontakt</p>
+			<div class="col-12 col-md-6">
+				<div id="mapid"></div>
 			</div>
 		</div>
 	</div>
